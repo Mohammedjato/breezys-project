@@ -1,0 +1,235 @@
+/* ===================== */
+/* General Styles        */
+/* ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: #213f7d;
+  --secondary-color: #39cdcc;
+  --light-color: #f9f9f9;
+}
+
+/* ===================== */
+/* Logo                  */
+/* ===================== */
+.logo {
+  padding: 10px;
+}
+
+/* ===================== */
+/* Sidebar               */
+/* ===================== */
+.side-menu {
+  width: 180px; /* Reduced width */
+  background-color: #ffffff; /* Updated background color */
+  color: #213F7D; /* Text color */
+  height: 100vh;
+  position: fixed;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
+
+.side-menu .brand-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px; /* Optional: Add rounded corners for hover effect */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.side-menu li img {
+  width: 16px; /* Uniform size for images */
+  height: 16px; /* Uniform size for images */
+  object-fit: contain; /* Ensure the image does not stretch */
+}
+
+.side-menu li:hover {
+  background-color: #39CDCC; /* Updated hover background color */
+  color: #ffffff; /* Updated hover text color */
+}
+
+/* ===================== */
+/* Header                */
+/* ===================== */
+.header {
+  margin-left: 200px;
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: -50px; /* Move content slightly upward */
+}
+
+/* ===================== */
+/* Search                */
+/* ===================== */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 400px;
+}
+
+.search button {
+  background-color: #39CDCC;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search button img {
+  width: 20px;
+  height: 20px;
+  border-radius: 150px;
+}
+
+/* ===================== */
+/* User Section          */
+/* ===================== */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Increased spacing between elements */
+  margin-left: 700px; /* Move to the right */
+  margin-top: -35px; /* Move up */
+}
+
+.user .img-case img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.user a.btn {
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.user img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* ===================== */
+/* Cards                 */
+/* ===================== */
+.cards {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+  align-items: center; /* Centers the cards vertically */
+  margin: 20px 0;
+  color: #213F7D;
+  padding-left: 200px; /* Add padding to avoid overlap with the sidebar */
+}
+
+.card {
+  width: 350px; /* Increased width */
+  height: 180px; /* Increased height */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px; /* Increased padding for better spacing */
+  text-align: center;
+  margin: 0 15px; /* Add some horizontal margin between cards */
+}
+
+.card img {
+  width: 50px; /* Slightly increased image size */
+  height: 50px; /* Slightly increased image size */
+  margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+/* ===================== */
+/* Table                 */
+/* ===================== */
+table {
+  width: 75%; /* Reduce the width to make the table more compact */
+  margin: 20px auto 20px 250px; /* Add a left margin to offset the sidebar */
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+/* ===================== */
+/* Status                */
+/* ===================== */
+.status {
+  padding: 4px 8px;
+  border-radius: 14px;
+}
+
+.status.Blacklisted {
+  background-color: #fe4f43;
+  color: white;
+}
+
+.status.active {
+  background-color: #6c9e6e;
+  color: white;
+}
+
+.status.Inactive {
+  background-color: #9ca2b3;
+  color: white;
+}
+
+.status.Pending {
+  background-color: #f4d263;
+  color: #f9f9f9;
+}
